@@ -34,4 +34,9 @@ public class Controller {
     public ResponseEntity<List<User>> getUsers(){
         return this.userService.listUsers();
     }
+
+    @GetMapping("/")
+    public String root(){
+        return "Ok";
+    }
 }
